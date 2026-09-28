@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Raghavendra Pan Shop | Keesara</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#D4AF37',
+              dark: '#121212',
+              card: '#1E1E1E',
+              accent: '#25D366'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased">
+
+  <!-- Navigation Bar -->
+  <nav class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-amber-900/40">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#home" class="flex items-center gap-2">
+        <span class="text-2xl">🍃</span>
+        <div>
+          <span class="text-lg font-bold text-amber-400 block leading-tight">Sri Raghavendra</span>
+          <span class="text-xs text-slate-400">PAN SHOP</span>
+        </div>
+      </a>
+      <!-- Desktop Menu Links -->
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#home" class="hover:text-amber-400 transition">Home</a>
+        <a href="#about" class="hover:text-amber-400 transition">About Us</a>
+        <a href="#menu" class="hover:text-amber-400 transition">Menu</a>
+        <a href="#events" class="hover:text-amber-400 transition">Party Orders</a>
+        <a href="#reviews" class="hover:text-amber-400 transition">Reviews</a>
+        <a href="#contact" class="hover:text-amber-400 transition">Contact</a>
+      </div>
+      <!-- WhatsApp CTA Header -->
+      <a href="https://wa.me/918252568962?text=Hi%20Sri%20Raghavendra%20Pan%20Shop,%20I%20have%20an%20inquiry" target="_blank" 
+         class="bg-brand-accent hover:bg-emerald-600 text-white font-semibold text-xs md:text-sm px-4 py-2 rounded-full flex items-center gap-2 transition shadow-lg">
+        <i class="fa-brands fa-whatsapp text-lg"></i>
+        <span>Order / Inquiry</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative py-16 md:py-24 bg-gradient-to-b from-amber-950/30 to-brand-dark border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <span class="inline-block bg-amber-500/10 text-amber-400 text-xs font-bold uppercase tracking-widest py-1 px-3 rounded-full border border-amber-500/30 mb-4">
+        Authentic Taste & Quality • Keesara
+      </span>
+      <h1 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight max-w-3xl mx-auto">
+        Discover Fresh, Handcrafted Paans & Refreshments
+      </h1>
+      <p class="text-slate-400 text-sm md:text-base max-w-2xl mx-auto mt-4">
+        Serving authentic sweet paans, dry fruit delicacies, ice paans, and daily snacks in Keesara. Made fresh with premium betel leaves and natural ingredients.
+      </p>
+
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="https://wa.me/918252568962?text=Hi,%20I%20want%20to%20order%20Paan" target="_blank"
+           class="bg-brand-accent hover:bg-emerald-600 text-white font-bold px-6 py-3.5 rounded-xl flex items-center gap-2 shadow-lg transition transform active:scale-95">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          Order via WhatsApp
+        </a>
+        <a href="#menu" class="bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold px-6 py-3.5 rounded-xl border border-amber-500/20 transition">
+          View Menu
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-16 max-w-6xl mx-auto px-4">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="bg-brand-card p-2 rounded-2xl border border-slate-800 shadow-xl">
+        <img src="./paan-store.webp" alt="Sri Raghavendra Pan Shop" class="w-full h-72 md:h-96 object-cover rounded-xl" />
+      </div>
+      <div>
+        <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">About Sri Raghavendra Pan Shop</span>
+        <h2 class="text-2xl md:text-3xl font-bold text-white mt-1">Preserving Traditional Flavors & Hospitality</h2>
+        <p class="text-slate-400 text-sm mt-4 leading-relaxed">
+          At Sri Raghavendra Pan Shop in Keesara, we take pride in offering a rich variety of paans made with high-quality betel leaves sourced daily. Whether you crave traditional Meetha Paan, Chocolate Paan, or refreshing Ice Paan, every preparation ensures hygienic and authentic taste.
+        </p>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800">
+            <h4 class="text-amber-400 font-bold text-xl">100% Fresh</h4>
+            <p class="text-slate-400 text-xs mt-0.5">Handpicked leaves & authentic masala</p>
+          </div>
+          <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800">
+            <h4 class="text-amber-400 font-bold text-xl">Party Catering</h4>
+            <p class="text-slate-400 text-xs mt-0.5">Custom counters for weddings & events</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Party Orders Banner -->
+  <section id="events" class="bg-gradient-to-r from-amber-900/40 via-amber-950/60 to-slate-900 py-12 border-y border-amber-900/40">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div>
+        <span class="bg-amber-500/20 text-amber-300 text-xs font-bold uppercase tracking-wider py-1 px-3 rounded-full">Event Special</span>
+        <h3 class="text-2xl font-bold text-white mt-2">Planning a Wedding, Birthday or Function?</h3>
+        <p class="text-slate-300 text-sm mt-1">Book live Paan counters and refreshment spreads for your guests in Keesara & surrounding areas.</p>
+      </div>
+      <a href="https://wa.me/918252568962?text=Hi,%20I%20want%20to%20inquire%20about%20Party%20/%20Event%20Counter%20Booking" target="_blank"
+         class="whitespace-nowrap bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-6 py-3.5 rounded-xl transition shadow-lg">
+        Book Party Counter
+      </a>
+    </div>
+  </section>
+
+  <!-- Products / Menu Section -->
+  <section id="menu" class="py-16 max-w-6xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">Our Menu</span>
+      <h2 class="text-2xl md:text-3xl font-bold text-white mt-1">Popular Paan Specialties</h2>
+      <p class="text-slate-400 text-sm mt-2">Crafted with care using natural gulkand, spices, and nuts.</p>
+      
+      <!-- Pan Menu Container -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+        <!-- Traditional & Herbal -->
+        <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 text-left">
+          <h3 class="text-xl font-bold text-amber-400 mb-4 pb-2 border-b border-slate-700">Traditional & Herbal</h3>
+          
+          <div class="py-3 border-b border-slate-700/50">
+            <div class="flex justify-between items-baseline">
+              <h4 class="font-bold text-white">Sada Pan</h4>
+              <span class="text-amber-400 font-semibold">₹10</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1 mb-3">Classic simple betel leaf preparation with traditional chuna, kattha, and supari.</p>
+            <button onclick="openCheckout('Sada Pan', 10)" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-1.5 px-3 rounded text-xs transition">Buy Now</button>
+          </div>
+
+          <div class="py-3 border-b border-slate-700/50">
+            <div class="flex justify-between items-baseline">
+              <h4 class="font-bold text-white">Pudina Pan</h4>
+              <span class="text-amber-400 font-semibold">₹10</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1 mb-3">Refreshing mint-infused pan crafted for a cooling herbal digestive aftertaste.</p>
+            <button onclick="openCheckout('Pudina Pan', 10)" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-1.5 px-3 rounded text-xs transition">Buy Now</button>
+          </div>
+
+          <div class="py-3 border-b border-slate-700/50">
+            <div class="flex justify-between items-baseline">
+              <h4 class="font-bold text-white">RK Baba Parvat Sada</h4>
+              <span class="text-amber-400 font-semibold">₹10</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1 mb-3">Traditional RK Baba Parvat style plain pan with authentic herbal leaf mix.</p>
+            <button onclick="openCheckout('RK Baba Parvat Sada', 10)" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-1.5 px-3 rounded text-xs transition">Buy Now</button>
+          </div>
+
+          <div class="py-3 border-b border-slate-700/50">
+            <div class="flex justify-between items-baseline">
+              <h4 class="font-bold text-white">RK Baba Parvat Kolkata</h4>
+              <span class="text-amber-400 font-semibold">₹20</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1 mb-3">Prepared with crisp Kolkata betel leaves and special RK Baba Parvat masala blend.</p>
+            <button onclick="openCheckout('RK Baba Parvat Kolkata', 20)" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-1.5 px-3 rounded text-xs transition">Buy Now</button>
+          </div>
+
+          <div class="py-3">
+            <div class="flex justify-between items-baseline">
+              <h4 class="font-bold text-white">RK Baba Parvat Kalakata 160 Pan</h4>
+              <span class="text-amber-400 font-semibold">₹30</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1 mb-3">Specialty Kolkata pan incorporating premium 160 grade aromatic masala.</p>
+            <button onclick="openCheckout('RK Baba Parvat Kalakata 160 Pan', 30)" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-1.5 px-3 rounded text-xs transition">Buy Now</button>
+          </div>
+        </div>
+
+        <!-- Sweet & Premium Masala -->
+        <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 text-left">
+          <h3 class="text-xl font-bold text-amber-400 mb-4 pb-2 border-b border-slate-700">Sweet & Premium Masala</h3>
+          
+          <div class="py-3 border-b border-slate-700/50">
+            <div class="flex justify-between items-baseline">
+              <h4 class="font-bold text-white">Sweet Pan</h4>
+              <span class="text-amber-400 font-semibold">₹35</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1 mb-3">Delightful non-tobacco combination filled with sweet gulkand, saunf, and coconut.</p>
+            <button onclick="openCheckout('Sweet Pan', 35)" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-1.5 px-3 rounded text-xs transition">Buy Now</button>
+          </div>
+
+          <div class="py-3 border-b border-slate-700/50">
+            <div class="flex justify-between items-baseline">
+              <h4 class="font-bold text-white">Rampyari Pan</h4>
+              <span class="text-amber-400 font-semibold">₹30</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1 mb-3">Traditional sweet specialty pan prepared with sweet spices and rich botanical flavor.</p>
+            <button onclick="openCheckout('Rampyari Pan', 30)" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-1.5 px-3 rounded text-xs transition">Buy Now</button>
+          </div>
+
+          <div class="py-3 border-b border-slate-700/50">
+            <div class="flex justify-between items-baseline">
+              <h4 class="font-bold text-white">Meenakshi Pan</h4>
+              <span class="text-amber-400 font-semibold">₹30</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1 mb-3">Aromatic sweet pan blend infused with fragrant Meenakshi chatni and gulkand.</p>
+            <button onclick="openCheckout('Meenakshi Pan', 30)" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-1.5 px-3 rounded text-xs transition">Buy Now</button>
+          </div>
+
+          <div class="py-3 border-b border-slate-700/50">
+            <div class="flex justify-between items-baseline">
+              <h4 class="font-bold text-white">Chandan Meenakshi Pan</h4>
+              <span class="text-amber-400 font-semibold">₹30</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1 mb-3">Premium sandalwood (chandan) scent paired with sweet Meenakshi flavor blend.</p>
+            <button onclick="openCheckout('Chandan Meenakshi Pan', 30)" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-1.5 px-3 rounded text-xs transition">Buy Now</button>
+          </div>
+
+          <div class="py-3 border-b border-slate-700/50">
+            <div class="flex justify-between items-baseline">
+              <h4 class="font-bold text-white">Navratan Meenakshi</h4>
+              <span class="text-amber-400 font-semibold">₹40</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1 mb-3">Rich combination of nine traditional sweet ingredients and Meenakshi flavoring.</p>
+            <button onclick="openCheckout('Navratan Meenakshi', 40)" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-1.5 px-3 rounded text-xs transition">Buy Now</button>
+          </div>
+
+          <div class="py-3">
+            <div class="flex justify-between items-baseline">
+              <h4 class="font-bold text-white">X Meenakshi</h4>
+              <span class="text-amber-400 font-semibold">₹40</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1 mb-3">Special extra-rich signature Meenakshi pan for an intense aromatic taste.</p>
+            <button onclick="openCheckout('X Meenakshi', 40)" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-1.5 px-3 rounded text-xs transition">Buy Now</button>
+          </div>
+        </div>
+
+        <!-- Flavored & Dessert Delights -->
+        <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 text-left">
+          <h3 class="text-xl font-bold text-amber-400 mb-4 pb-2 border-b border-slate-700">Flavored & Dessert Delights</h3>
+          
+          <div class="py-3 border-b border-slate-700/50">
+            <div class="flex justify-between items-baseline">
+              <h4 class="font-bold text-white">Mango Pan</h4>
+              <span class="text-amber-400 font-semibold">₹30</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1 mb-3">Fruity pan delight infused with sweet ripe mango flavor and gulkand.</p>
+            <button onclick="openCheckout('Mango Pan', 30)" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-1.5 px-3 rounded text-xs transition">Buy Now</button>
+          </div>
+
+          <div class="py-3 border-b border-slate-700/50">
+            <div class="flex justify-between items-baseline">
+              <h4 class="font-bold text-white">Strawberry Pan</h4>
+              <span class="text-amber-400 font-semibold">₹30</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1 mb-3">Refreshing berry-flavored pan crafted with sweet strawberry syrup and mouth fresheners.</p>
+            <button onclick="openCheckout('Strawberry Pan', 30)" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-1.5 px-3 rounded text-xs transition">Buy Now</button>
+          </div>
+
+          <div class="py-3 border-b border-slate-700/50">
+            <div class="flex justify-between items-baseline">
+              <h4 class="font-bold text-white">Chocolate Pan</h4>
+              <span class="text-amber-400 font-semibold">₹60</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1 mb-3">Rich dessert pan loaded with chocolate spread and sweet gulkand center.</p>
+            <button onclick="openCheckout('Chocolate Pan', 60)" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-1.5 px-3 rounded text-xs transition">Buy Now</button>
+          </div>
+
+          <div class="py-3">
+            <div class="flex justify-between items-baseline">
+              <h4 class="font-bold text-white">Vanilla Pan</h4>
+              <span class="text-amber-400 font-semibold">₹60</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1 mb-3">Smooth vanilla-flavored sweet pan offering a unique dessert experience.</p>
+            <button onclick="openCheckout('Vanilla Pan', 60)" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-1.5 px-3 rounded text-xs transition">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Item 1 -->
+      <div class="bg-brand-card rounded-xl border border-slate-800 p-4 hover:border-amber-500/40 transition group">
+        <div class="bg-slate-900 h-40 rounded-lg flex items-center justify-center text-4xl group-hover:scale-105 transition duration-300">🍃</div>
+        <h3 class="text-lg font-bold text-white mt-4">Special Meetha Paan</h3>
+        <p class="text-slate-400 text-xs mt-1">Blend of sweet gulkand, saunf, dry fruits, and aromatic spices.</p>
+        <div class="mt-4 flex justify-between items-center">
+          <span class="text-amber-400 font-bold text-sm">Best Seller</span>
+          <button onclick="openCheckout('Special Meetha Paan', 35)" class="text-xs bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-slate-200 py-1.5 px-3 rounded-lg font-semibold transition">Order</button>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="bg-brand-card rounded-xl border border-slate-800 p-4 hover:border-amber-500/40 transition group">
+        <div class="bg-slate-900 h-40 rounded-lg flex items-center justify-center text-4xl group-hover:scale-105 transition duration-300">🍫</div>
+        <h3 class="text-lg font-bold text-white mt-4">Chocolate Paan</h3>
+        <p class="text-slate-400 text-xs mt-1">Rich chocolate coating with a delicious sweet filling inside.</p>
+        <div class="mt-4 flex justify-between items-center">
+          <span class="text-amber-400 font-bold text-sm">Kids Favorite</span>
+          <button onclick="openCheckout('Chocolate Paan', 60)" class="text-xs bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-slate-200 py-1.5 px-3 rounded-lg font-semibold transition">Order</button>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="bg-brand-card rounded-xl border border-slate-800 p-4 hover:border-amber-500/40 transition group">
+        <div class="bg-slate-900 h-40 rounded-lg flex items-center justify-center text-4xl group-hover:scale-105 transition duration-300">🧊</div>
+        <h3 class="text-lg font-bold text-white mt-4">Chilled Ice Paan</h3>
+        <p class="text-slate-400 text-xs mt-1">Super cooling paan experience served icy cold for summer days.</p>
+        <div class="mt-4 flex justify-between items-center">
+          <span class="text-amber-400 font-bold text-sm">Popular</span>
+          <button onclick="openCheckout('Chilled Ice Paan', 50)" class="text-xs bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-slate-200 py-1.5 px-3 rounded-lg font-semibold transition">Order</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="py-16 bg-slate-900/40 border-y border-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">Testimonials</span>
+        <h2 class="text-2xl font-bold text-white mt-1">What Our Customers Say</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-brand-card p-5 rounded-xl border border-slate-800">
+          <div class="text-amber-400 text-sm mb-2">★★★★★</div>
+          <p class="text-slate-300 text-xs leading-relaxed">"Best meetha paan in Keesara area. Always fresh and hygienic."</p>
+          <span class="text-slate-500 text-xs font-bold block mt-4">— Local Customer</span>
+        </div>
+        <div class="bg-brand-card p-5 rounded-xl border border-slate-800">
+          <div class="text-amber-400 text-sm mb-2">★★★★★</div>
+          <p class="text-slate-300 text-xs leading-relaxed">"Ordered chocolate paan for family function. Everyone loved the taste!"</p>
+          <span class="text-slate-500 text-xs font-bold block mt-4">— Function Order</span>
+        </div>
+        <div class="bg-brand-card p-5 rounded-xl border border-slate-800">
+          <div class="text-amber-400 text-sm mb-2">★★★★★</div>
+          <p class="text-slate-300 text-xs leading-relaxed">"Very polite staff and quick service right on main road."</p>
+          <span class="text-slate-500 text-xs font-bold block mt-4">— Visitor</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Contact Section -->
+  <footer id="contact" class="bg-black py-12 text-slate-400 text-xs border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="text-amber-400 font-bold text-base mb-2">Sri Raghavendra Pan Shop</h4>
+        <p class="leading-relaxed">Your destination for authentic, high-quality paan and cold refreshments in Keesara.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-sm mb-2">Store Hours & Location</h4>
+        <p>📍 Main Road, Keesara, Telangana 501303</p>
+        <p class="mt-1">⏰ Open Daily: 8:00 AM – 11:00 PM</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-sm mb-2">Direct Contact</h4>
+        <p>📞 Phone: +91 82525 68962</p>
+        <a href="https://wa.me/918252568962" target="_blank" class="inline-block mt-3 bg-brand-accent text-white font-bold px-4 py-2 rounded-lg">
+          Message on WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="text-center mt-12 pt-6 border-t border-slate-900 text-slate-600">
+      © 2026 Sri Raghavendra Pan Shop. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Order Modal / Payment Section -->
+  <div id="checkout-modal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center p-4 z-50">
+    <div class="bg-slate-800 p-6 rounded-xl border border-amber-400 max-w-md w-full text-white relative">
+      <button onclick="closeCheckout()" class="absolute top-3 right-3 text-slate-400 hover:text-white font-bold text-xl">&times;</button>
+      
+      <h3 class="text-xl font-bold text-amber-400 mb-2">Complete Your Order</h3>
+      <p id="selected-item-text" class="text-sm text-slate-300 mb-4 font-semibold"></p>
+
+      <form id="order-form" onsubmit="processOrder(event)">
+        <div class="mb-3">
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Your Name *</label>
+          <input type="text" id="cust-name" required placeholder="Enter full name" class="w-full bg-slate-900 border border-slate-700 rounded p-2 text-sm text-white focus:outline-none focus:border-amber-400">
+        </div>
+
+        <div class="mb-3">
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Phone Number *</label>
+          <input type="tel" id="cust-phone" required placeholder="10-digit mobile number" class="w-full bg-slate-900 border border-slate-700 rounded p-2 text-sm text-white focus:outline-none focus:border-amber-400">
+        </div>
+
+        <div class="mb-3">
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Delivery / Pickup Address *</label>
+          <textarea id="cust-address" required rows="2" placeholder="Enter delivery address or 'Store Pickup'" class="w-full bg-slate-900 border border-slate-700 rounded p-2 text-sm text-white focus:outline-none focus:border-amber-400"></textarea>
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Payment Method</label>
+          <select id="pay-method" class="w-full bg-slate-900 border border-slate-700 rounded p-2 text-sm text-white focus:outline-none focus:border-amber-400">
+            <option value="UPI / QR Code">UPI (GPay / PhonePer / Paytm)</option>
+            <option value="Cash on Delivery">Cash on Delivery / Pickup</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 rounded text-sm transition">
+          Confirm & Send via WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    let selectedItem = '';
+    let selectedPrice = 0;
+
+    function openCheckout(itemName, price) {
+      selectedItem = itemName;
+      selectedPrice = price;
+      document.getElementById('selected-item-text').innerText = `Item: ${itemName} - ₹${price}`;
+      document.getElementById('checkout-modal').classList.remove('hidden');
+    }
+
+    function closeCheckout() {
+      document.getElementById('checkout-modal').classList.add('hidden');
+    }
+
+    function processOrder(e) {
+      e.preventDefault();
+      const name = document.getElementById('cust-name').value;
+      const phone = document.getElementById('cust-phone').value;
+      const address = document.getElementById('cust-address').value;
+      const payMethod = document.getElementById('pay-method').value;
+
+      const message = `*New Order - Sri Raghavendra Pan Shop*%0A%0A` +
+        `*Item:* ${selectedItem} (₹${selectedPrice})%0A` +
+        `*Customer Name:* ${name}%0A` +
+        `*Phone:* ${phone}%0A` +
+        `*Address:* ${address}%0A` +
+        `*Payment Choice:* ${payMethod}`;
+
+      const whatsappNum = "918252568962"; 
+      window.open(`https://wa.me/${whatsappNum}?text=${message}`, '_blank');
+      closeCheckout();
+    }
+  </script>
+
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "584b90bf48c04772881c7ace0911c013"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
